@@ -1,0 +1,36 @@
+
+POST http://localhost:8080/generos
+Content-Type: application/json
+
+{
+  "nome": "Aventura"
+}
+
+###
+POST http://localhost:8080/plataformas
+Content-Type: application/json
+
+{
+  "nome": "PC"
+}
+
+###
+POST http://localhost:8080/jogos
+Content-Type: application/json
+
+{
+  "titulo": "Forza Horizon 6",
+  "idGenero": 8
+}
+
+###
+POST http://localhost:8080/jogos-plataformas
+Content-Type: application/json
+
+{
+  "idJogo": 1,
+  "idPlataforma": 1
+}
+
+###
+GET http://localhost:8080/jogos
